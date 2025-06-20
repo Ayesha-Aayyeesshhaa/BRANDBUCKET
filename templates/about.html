@@ -1,0 +1,230 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>About Us</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+	</style>
+</head>
+<body>
+
+	<div>
+
+						<!-- menu start -->
+						{% include 'base.html'%}
+
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+	<!-- end header -->
+
+	<!-- search area -->
+	<div class="search-area">
+		<div class="container">
+			<div class="row">
+
+			</div>
+		</div>
+	</div>
+	<!-- end search arewa -->
+
+
+	<!-- end breadcrumb section -->
+
+	<!-- check out section -->
+	<div class="checkout-section mt-150 mb-150">
+		<div class="container">
+			<h1 class="text-center"> About Us</h1>
+			<div class="row">
+
+
+				<div class="col-lg-6 mt-3">
+					<h4> Welcome to BrandBucket!</h4>
+<h6>
+At BrandBucket, we take pride in offering the finest collection of exclusive branded bags to elevate your style.
+</h6>
+<h6>
+~Our story began in the 2005s when our visionary founder, <u><i style="color:blue">Mohammed Jaffer Shaikh's father, BabaSab Shaikh,</i></u> established a humble bag boutique.
+</h6>
+<h6>
+~Back then, every bag was carefully curated and sold with personalized service, helping customers find the perfect accessory for any occasion.
+</h6>
+<h6>
+~Over the years, we have grown and evolved with changing fashion trends. While we uphold our legacy of quality and craftsmanship, we’ve embraced the digital age.
+</h6>
+<h6>
+~Today, you can explore and shop our exclusive collection online, enjoying a seamless and stylish shopping experience from anywhere.
+</h6>
+<h6>
+~Our dedication to excellence remains unwavering, and we strive to offer handbags that combine elegance, utility, and timeless appeal.
+</h6>
+<h6>
+~Each bag in our collection is thoughtfully selected from premium brands to ensure lasting quality, luxury design, and functionality.
+</h6>
+<h6>
+~Customer satisfaction is the core of everything we do. Our experienced team is always here to guide you in finding the perfect bag that matches your needs and personality.
+</h6>
+<h6>
+~Whether you prefer the charm of in-store shopping or the ease of browsing online, we are committed to providing you with a premium experience at every step.
+</h6>
+<h6>
+~Shop with us and discover the perfect branded bag that defines your style and completes your look—only at BrandBucket.
+</h6>
+
+	<hr>
+	<i style=" color:magenta"><h5>Thank you for choosing BrandBucket as your luxury fashion partner. We look forward to elevating your style with our premium collection of exquisite handbags.
+		.</h5></i>
+				</div>
+
+				{% comment %} <div class="col-lg-6 mt-3">
+				<img src="{% static 'images/a1.jpg'%}" width="700" height="400">
+				</div> {% endcomment %}
+			</div>
+		</div>
+	</div>
+	<!-- end check out section -->
+
+	<!--<p>we now provide the convenience of online shopping alongside our commitment to craftsmanship and quality.
+	 Find your perfect sleep solution with us today!</p>-->
+
+		<footer class="footer">
+     <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+			  <li><a href="tel:9342746341">Call 9342746341</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">Hand Bags</a></li>
+            <li><a href="#">Tote Bags</a></li>
+            <li><a href="#">Clutchs</a></li>
+            <li><a href="#">Sling Bags</a></li>
+            <li><a href="#">BackPacks</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+			  <a href="https://wa.me//9342746341"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
+
+</body>
+</html>
